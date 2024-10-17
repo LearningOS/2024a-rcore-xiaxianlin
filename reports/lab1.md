@@ -2,7 +2,6 @@
 通过对 TaskControl 进行改造，添加 syscall_times 和 time 属性，并提供给 sys_task_info() 调用，当任务运行时记录当前时长，任务结束或者挂起时计算出运行时长，在 syscall 方法中更新任务的 syscall_times。
 
 # 简答题
-
 ### 第一题
 > 使用的是 rust_sbi
 分别是试图通过直接写入内存地址、错误使用的非当前特权级指令、直接访问寄存器
